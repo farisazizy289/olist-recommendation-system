@@ -284,10 +284,10 @@ st.markdown('<hr class="divider">', unsafe_allow_html=True)
 st.markdown('<p class="control-label">Bahasa Kategori</p>', unsafe_allow_html=True)
 lang_col1, lang_col2, _ = st.columns([1, 1, 3])
 with lang_col1:
-    lang_id = st.button("🇮🇩 Indonesia", key="btn_id",
+    lang_id = st.button("🇮🇩\nIndonesia", key="btn_id",
                         type="primary" if st.session_state.get("lang","id") == "id" else "secondary")
 with lang_col2:
-    lang_en = st.button("🇬🇧 English", key="btn_en",
+    lang_en = st.button("🇬🇧\nEnglish", key="btn_en",
                         type="primary" if st.session_state.get("lang","id") == "en" else "secondary")
 
 if lang_id:
