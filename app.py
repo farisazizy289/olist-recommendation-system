@@ -562,12 +562,12 @@ else:
 
     if is_cold:
 
-        badge_html = '''
+        badge_html = """
         <span class="result-type-badge"
-        style="background:#0c1a0c;color:#4ade80;border:1px solid #166534;">
-        popularity-based
+        style="background:#0c1929;color:#38bdf8;border:1px solid #1e3a5f;">
+        hybrid · CF + popularity
         </span>
-        '''
+        """
 
         if lang_code == "id":
             sub_text = "Menampilkan kategori terpopuler untuk user baru"
@@ -758,30 +758,16 @@ else:
     # ─────────────────────────────────────────────
     # INFO BOX
     # ─────────────────────────────────────────────
-    st.markdown("""
-    <div class="info-box">
-
-        <div class="info-row">
-            <span class="info-key">CF Score</span>
-            <span>
-            Similarity between shopping patterns
-            </span>
-        </div>
-
-        <div class="info-row">
-            <span class="info-key">Popularity</span>
-            <span>
-            Category popularity based on purchase frequency
-            and reviews
-            </span>
-        </div>
-
-        <div class="info-row">
-            <span class="info-key">Hybrid Score</span>
-            <span>
-            Final combined recommendation score
-            </span>
-        </div>
-
+    st.markdown(
+    f"""
+    <div class="result-header">
+        <span class="result-title">REKOMENDASI</span>
+        {badge_html}
     </div>
-    """, unsafe_allow_html=True)
+
+    <p style="font-size:12px;color:#475569;margin:-4px 0 16px;">
+        {sub_text}
+    </p>
+    """,
+    unsafe_allow_html=True
+)
