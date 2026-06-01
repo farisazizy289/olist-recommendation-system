@@ -78,7 +78,7 @@ CATEGORY_MAP = {
     "telefonia":                             {"en": "Telephony",                                  "id": "Telepon & Komunikasi"},
     "telefonia_fixa":                        {"en": "Fixed Telephony",                            "id": "Telepon Rumah & PSTN"},
     "utilidades_domesticas":                 {"en": "Household Utilities",                        "id": "Peralatan Rumah Tangga"},
-    "utilidades_domesticas_2":              {"en": "Household Utilities II",                      "id": "Peralatan Rumah Tangga II"},
+    "utilidades_domesticas_2":              {"en": "Household Utilities 2",                      "id": "Peralatan Rumah Tangga 2"},
 }
 
 def translate(raw_name, lang):
